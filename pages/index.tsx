@@ -7,20 +7,16 @@ import { fadeInUp, stagger } from '../animations'
 import { Service } from '../types'
 import ServiceCard from '@/components/ServiceCard'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { IconSolid } from '@/constant/icons';
+
 const Home: FC<Service[]> = () => {
   return (
     <div className="flex flex-col flex-grow px-6 pt-1 ">
       <Head>
-        <title>Web Developer | Manoj Kiranti</title>
+        <title>Title | Subtitle</title>
       </Head>
-      <h5 className="my-3 text-base font-medium">
-
-      </h5>
-      <div className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100">
-        <h4 className='my-3 text-xl font-semibold tracking-wide '>
-          <p className='text-primary'>Home</p>
-        </h4>
-      </div>
+      Home 
     </div>
   )
 }

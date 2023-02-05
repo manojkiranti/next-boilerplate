@@ -5,11 +5,11 @@ export default function Document() {
     <Html lang="en" className="dark">
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Kaushan+Script&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700&display=swap" rel="stylesheet" />
         <meta name="description" content="Javascript Developer" />
         <meta name="keywords" content="Javascript Developer" />
       </Head>
-      <body className="bg-gradient-to-r from-gray-100 to to-gray-400 dark:from-dark-500 dark:to-dark-700 dark:text-white">
+      <body className="bg-body">
         <Main />
         <NextScript />
       </body>

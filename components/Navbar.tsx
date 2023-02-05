@@ -22,8 +22,8 @@ const Navbar = () => {
     const [activeItem, setActiveItem] = useState<string>('');
     const { pathname } = useRouter();
     return (
-        <div className="flex justify-between px-5 py-3 my-3">
-            <h1>Header</h1>
+        <div className="flex justify-between px-5 py-3 ">
+            
         </div>
     )
 }

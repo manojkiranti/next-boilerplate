@@ -5,6 +5,34 @@ import { MdDeveloperMode } from "react-icons/md";
 import { IProject, Service, Skill } from "./types";
 
 import { BsCircleFill } from "react-icons/bs";
+import { AiOutlineHome, AiOutlineForm} from "react-icons/ai";
+import { RiRadioButtonFill } from "react-icons/ri";
+import { BiHeading } from "react-icons/bi";
+
+import routes from "./config/routes";
+
+export const menuItems = [
+  {
+    name: 'Home',
+    icon: AiOutlineHome,
+    href: routes.home,
+  },
+  {
+    name: 'Forms',
+    icon: AiOutlineForm,
+    href: routes.form,
+  },
+  {
+    name: 'Buttons',
+    icon: RiRadioButtonFill,
+    href: routes.button,
+  },
+  {
+    name: 'Headings',
+    icon: BiHeading,
+    href: routes.heading,
+  },
+]
 
 export const services: Service[] = [
   {
