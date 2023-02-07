@@ -33,7 +33,7 @@ const MenuItem: FC<MenuItemProps> = ({ name, Icon, href, dropdownItems }) => {
     <>
       <NextLink
         href={href}
-        className="relative flex items-center h-12 px-4 text-sm text-gray-500 transition-all rounded-lg whitespace-nowrap hover:text-brand dark:hover:text-white dark:text-white"
+        className={`relative flex items-center h-12 px-4 text-sm  transition-all rounded-lg whitespace-nowrap hover:text-brand dark:hover:text-white dark:text-white ${href === pathname? 'text-white': 'text-gray-500'}`}
       >
 
         <span className="relative z-[1] mr-3"><Icon /></span>
@@ -41,7 +41,7 @@ const MenuItem: FC<MenuItemProps> = ({ name, Icon, href, dropdownItems }) => {
 
         {href === pathname && (
           <motion.span
-            className="absolute bottom-0 left-0 right-0 w-full h-full rounded-lg bg-brand shadow-large"
+            className="absolute bottom-0 left-0 right-0 w-full h-full rounded-lg bg-primary shadow-large"
             layoutId="menu-item-active-indicator"
           />
         )}
