@@ -3,6 +3,7 @@ const routes = {
     form: '/ui/forms',
     button: '/ui/buttons',
     heading: '/ui/headings',
+    paragraph: '/ui/paragraph'
   };
   
   export default routes;

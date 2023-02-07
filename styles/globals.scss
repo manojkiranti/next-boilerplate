@@ -55,14 +55,20 @@ h6 {
 }
 .input{
     @apply text-sm p-2.5 h-auto focus:outline-1 focus:ring-primary-400 focus:border-primary-400 focus:outline-primary-400 focus:outline-offset-0;
+    &.error{
+        @apply border-red-800;
+    }
 }
 .label {
     @apply block mb-2 text-sm font-semibold text-gray-700 dark:text-white p-0;
+    &.error {
+        @apply text-red-800;
+    }
 }
 // Cards
 .card {
     @apply shadow-lg;
-    @apply bg-white dark:bg-dark-700;
+    // @apply bg-white dark:bg-dark-700;
     @apply border-gray-100 border-solid border dark:border-gray-700;
 }
 .m-card{
@@ -93,3 +99,7 @@ h6 {
 //     }
 // }
 
+// collapse
+.collapse-content{
+    @apply text-sm text-muted dark:text-white
+}

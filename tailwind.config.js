@@ -60,6 +60,13 @@ module.exports = {
           secondary: "#6E6E6E",
           "primary-focus": "#c81413",
         },
+      },
+      {
+        dark:{
+          ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
+          primary: "#DD2625",
+          secondary: "#6E6E6E"
+        }
       }
     ]
   },

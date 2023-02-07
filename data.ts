@@ -4,7 +4,7 @@ import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
 import { IProject, Service, Skill } from "./types";
 
-import { BsCircleFill } from "react-icons/bs";
+import { BsCircleFill, BsParagraph } from "react-icons/bs";
 import { AiOutlineHome, AiOutlineForm} from "react-icons/ai";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { BiHeading } from "react-icons/bi";
@@ -31,6 +31,11 @@ export const menuItems = [
     name: 'Headings',
     icon: BiHeading,
     href: routes.heading,
+  },
+  {
+    name: 'paragraph',
+    icon: BsParagraph,
+    href: routes.paragraph,
   },
 ]
 

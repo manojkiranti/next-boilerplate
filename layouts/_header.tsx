@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC , useEffect } from "react";
 
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsMoon, BsMoonFill } from "react-icons/bs";
@@ -13,8 +13,13 @@ const Header:FC = () => {
     const { theme, setTheme } = useTheme();
     const handleTheme = () => {
         setTheme(theme === 'light'?'dark':'light')
+        
     }
     
+    useEffect(() => {
+        let doc = document.querySelector('html') as HTMLElement | null;
+        doc?.setAttribute('data-theme', theme||'');
+      }, [theme]);
 
     return (
         <>
